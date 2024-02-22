@@ -2,13 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
+## Install dependencies
+1. Instale node en su version 20.11.1
+2. Instale angular cli con NPM usando del siguiente comando `npm install -g @angular/cli`
+3. Intale git segun su necesidad `https://git-scm.com/downloads`
+
+## Clone repository
+1. Ejecute el comando `git clone https://github.com/sergio1999/skandia-front.git` para bajar el repositorio
+2. Sitúese en la carpeta raiz del proyecto y ejecute `npm install`, esto instalara todos los recursos que necesita el proyecto para correr
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Correr en consola `ng serve` para ejecutar el servidor dev. Navegar a `http://localhost:4200/`. La aplciaccion se recargara automaticamente a medida que se guarden cambios en los archivos.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Corra `ng generate component component-name` para generar un nuevo componente. Tambien puede usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
