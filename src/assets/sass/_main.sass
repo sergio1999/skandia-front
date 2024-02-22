@@ -1,0 +1,57 @@
+body
+    margin: 0
+
+#carousel-producto
+    .slick-track
+        display: flex
+        .slide
+            border: 1px solid green
+            margin: 0px 20px
+            padding: 0 20px
+            .checkbox
+                text-align: end
+            .description
+            .foot
+    .slick-arrow:before
+        color: #00C83C
+        font-size: 35px
+    .slick-next
+        right: 20px
+    .slick-prev
+        left: 5px
+        z-index: 1
+
+.separator
+    border: 1px solid #3F3F3F
+    height: 25px
+.green-icon
+    color: #00C83C
+    svg
+        fill: #00C83C
+#menu-toolbar
+    .data 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: inherit
+        margin: 0 5%
+        .information
+            gap: 10px
+            display: flex
+            align-items: center
+        .links
+            display: flex
+            gap: 25px
+            a
+                display: flex
+                color: #00C83C
+                font-weight: bold
+                gap: 10px
+.button-menu
+    border: none
+
+@media (max-width: 768px)
+    #menu-toolbar
+        .data
+            font-size: 12px
+            margin: 0

@@ -1,0 +1,16 @@
+<div class="mb-3" [formGroup]="formGroup">
+  <label [for]="component.id" *ngIf="component.label && component.label !== ''" [hidden]="formGroup.get(component.id)!.value == undefined || formGroup.get(component.id)!.value == ''" class="form-label">{{
+    component.label
+  }}</label>
+  <input
+    [type]="component.type"
+    [ngClass]="component.label && component.label !== '' ?
+      formGroup.get(component.id)!.value == undefined || formGroup.get(component.id)!.value == ''
+        ? 'class-with-margintop' : '' : ''"
+    class="form-control"
+    [id]="component.id"
+    [name]="component.id"
+    [placeholder]="component.placeholder"
+    [formControlName]="component.id"
+  />
+</div>
