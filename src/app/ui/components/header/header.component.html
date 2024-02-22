@@ -1,0 +1,25 @@
+<mat-toolbar id="menu-toolbar">
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Inicio</button>
+        <button mat-menu-item>Contratos</button>
+        <button mat-menu-item>Acciones</button>
+        <button mat-menu-item>Objetivos</button>
+        <button mat-menu-item>Herramientas</button>
+        <button mat-menu-item>Servicios al cliente</button>
+    </mat-menu>
+    <button class="button-menu" [matMenuTriggerFor]="menu" aria-label="menu icon">
+        <mat-icon class="green-icon">menu</mat-icon>
+    </button> 
+    <div class="data">
+        <div class="information">
+            <img src="./assets/icons/Skandia-icon.png" alt="">
+            <div class="separator"></div>
+            <span>Plan Financiero Digital - FPX</span>
+        </div>
+        <div class="links">
+            <a href="#"><img src="./assets/icons/FinancialPlanner-icon.svg" alt="">Tu Financial Planner</a>
+            <a href="#"><img src="./assets/icons/Aportes-icon.svg" alt="">Aportes</a>
+        </div>
+    </div>
+    
+</mat-toolbar>
