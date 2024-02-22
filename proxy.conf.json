@@ -1,0 +1,7 @@
+{
+    "/api/v1/test-front-end-skandia/": {
+        "target": "https://62e152f8fa99731d75d44571.mockapi.io",
+        "secure": true,
+        "changeOrigin": true
+    }
+}

@@ -1,0 +1,29 @@
+<ngx-slick-carousel id="carousel-producto" class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+    (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+    @for (item of inputSlides; track item.nameProduct) {
+        <div ngxSlickItem class="slide" >
+            <div class="checkbox"> 
+                <mat-checkbox></mat-checkbox>
+            </div>
+            <div class="description">
+                <b>Nombre del producto:</b> <br>
+                <p>{{item.nameProduct}}</p>
+            </div>
+            <div class="description">
+                <b>Balance del producto:</b> <br>
+                <p>{{item.balanceProduct}}</p>
+            </div>
+            <div class="description">
+                <b>Numero del producto:</b> <br>
+                <p>{{item.numberProduct}}</p>
+            </div>
+            <div class="description">
+                <b>Detalle del producto:</b>
+                <p>{{item.detaildProduct}}</p>
+            </div>
+            <div class="foot">
+                <p>¡Cuentas con $2.120.000 para tu objetivo! Te recomendamos aportar $388.000 mensuales para lograrlo en diciembre del 2022.</p>
+            </div>
+        </div>
+    }
+</ngx-slick-carousel>
